@@ -1,6 +1,7 @@
 package com.cc.spinach;
 
 import android.app.Application;
+import android.util.Log;
 
 /**
  * 注释：
@@ -12,5 +13,6 @@ public class App extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
+        Log.i("cc","应用启动了");
     }
 }
