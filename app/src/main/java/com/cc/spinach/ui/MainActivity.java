@@ -1,8 +1,10 @@
-package com.cc.spinach;
+package com.cc.spinach.ui;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+
+import com.cc.spinach.R;
 
 public class MainActivity extends AppCompatActivity {
 
