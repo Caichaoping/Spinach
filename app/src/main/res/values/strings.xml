@@ -1,4 +1,17 @@
 <resources>
     <string name="app_name">Spinach</string>
     <string name="action_settings">Settings</string>
+    <string name="new_detail">在git操作中，我们经常会用到fetch, merge, pull和push等命令，以下是一些我们需要注意的地方。
+
+给大家准备了参考资料：
+
+1.  Whatʼs a Fast Forward Merge?： https://sandofsky.com/images/fast_forward.pdf
+
+2.  Understanding the Git Workflow： https://sandofsky.com/blog/git-workflow.html
+
+3.  Understanding Git: Merging： http://www.sbf5.com/~cduan/technical/git/git-3.shtml
+
+git pull = git fetch + git merge
+
+在git仓库中运行命令：git remote -v</string>
 </resources>
