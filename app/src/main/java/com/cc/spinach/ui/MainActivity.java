@@ -6,8 +6,10 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.MenuItem;
-
+import android.view.View;
+import android.widget.TextView;
 
 import com.cc.spinach.R;
 import com.cc.spinach.base.BaseActivity;
@@ -24,6 +26,13 @@ public class MainActivity extends BaseActivity {
     NavigationView mNavigationView;
     @Bind(R.id.drawerLayout)
     DrawerLayout mDrawerLayout;
+//    @Bind(R.id.header_icon)
+//    ImageView iv_head;
+//    @Bind(R.id.header_name)
+//    TextView tv_name;
+//    @Bind(R.id.header_bio)
+//    TextView tv_bio;
+    private TextView tv_bio;
 
     private ActionBarDrawerToggle mDrawerToggle;
 
@@ -34,6 +43,7 @@ public class MainActivity extends BaseActivity {
         ButterKnife.bind(this);
         initView();
         setContent(R.id.drawer_tab1);
+
 
     }
 
@@ -51,6 +61,10 @@ public class MainActivity extends BaseActivity {
                 return true;
             }
         });
+        LayoutInflater inflater = LayoutInflater.from(MainActivity.this);
+        View view = inflater.inflate(R.layout.drawer_header,null);
+        tv_bio = (TextView) view.findViewById(R.id.header_bio);
+        tv_bio.setText("数据的开关阀建设的赶快来进口量的双方各");
     }
 
 
@@ -68,8 +82,7 @@ public class MainActivity extends BaseActivity {
                 break;
             case R.id.drawer_about:
                 Log.d("cc","关于");
-
-                break;
+                throw new RuntimeException("boom!");
         }
 
     }
