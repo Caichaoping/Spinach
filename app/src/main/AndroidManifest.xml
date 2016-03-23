@@ -24,6 +24,15 @@
         <activity android:name=".ui.NewDetailsActivity">
 
         </activity>
+
+        <activity
+            android:name=".ui.CustomErrorActivity"
+            android:label="错误页面"
+            android:process=":error_activity">
+            <intent-filter>
+            <action android:name="cat.ereza.customactivityoncrash.ERROR" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

@@ -8,10 +8,6 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-    <!--程序崩溃时候显示的Activity主题-->
-    <style name="CustomActivityOnCrashTheme" parent="Theme.AppCompat.Light.NoActionBar">
-
-    </style>
 
 
 

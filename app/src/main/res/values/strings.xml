@@ -62,14 +62,10 @@
     <string name="username_empty">用户名不能为空</string>
     <string name="password_empty">密码不能为空</string>
 
-    <string name="customactivityoncrash_error_activity_error_occurred_explanation">Boom！程序爆炸了！</string>
-    <string name="customactivityoncrash_error_activity_unknown_exception">未知错误</string>
-    <string name="customactivityoncrash_error_activity_restart_app">重启试试</string>
-    <string name="customactivityoncrash_error_activity_close_app">直接关了</string>
-    <string name="customactivityoncrash_error_activity_error_details">错误详情</string>
-    <string name="customactivityoncrash_error_activity_error_details_title">错误信息</string>
-    <string name="customactivityoncrash_error_activity_error_details_close">关闭</string>
-    <string name="customactivityoncrash_error_activity_error_details_copy">复制</string>
-    <string name="customactivityoncrash_error_activity_error_details_copied">复制成功</string>
-    <string name="customactivityoncrash_error_activity_error_details_clipboard_label">错误信息</string>
+    <string name="error_occurred">抱歉,应用发生异常,请上报异常\n将立即为您修复.</string>
+    <string name="error_details">错误详情</string>
+    <string name="unknown_exception">Unknown exception</string>
+    <string name="restart_app">重启应用</string>
+    <string name="close_app">关闭退出</string>
+
 </resources>
