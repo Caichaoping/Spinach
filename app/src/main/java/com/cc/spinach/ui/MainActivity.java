@@ -26,12 +26,7 @@ public class MainActivity extends BaseActivity {
     NavigationView mNavigationView;
     @Bind(R.id.drawerLayout)
     DrawerLayout mDrawerLayout;
-//    @Bind(R.id.header_icon)
-//    ImageView iv_head;
-//    @Bind(R.id.header_name)
-//    TextView tv_name;
-//    @Bind(R.id.header_bio)
-//    TextView tv_bio;
+
     private TextView tv_bio;
 
     private ActionBarDrawerToggle mDrawerToggle;
@@ -51,7 +46,7 @@ public class MainActivity extends BaseActivity {
         setSupportActionBar(mToolbar);
         mDrawerToggle = new ActionBarDrawerToggle(this,mDrawerLayout,mToolbar,R.string.drawer_open ,R.string.drawer_close);
         mDrawerToggle.syncState();
-        mDrawerLayout.setDrawerListener(mDrawerToggle);
+        mDrawerLayout.addDrawerListener(mDrawerToggle);
         mNavigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(MenuItem menuItem) {

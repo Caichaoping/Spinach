@@ -1,7 +1,6 @@
 package com.cc.spinach;
 
 import android.app.Application;
-import android.util.Log;
 
 import cat.ereza.customactivityoncrash.CustomActivityOnCrash;
 
@@ -12,10 +11,12 @@ import cat.ereza.customactivityoncrash.CustomActivityOnCrash;
  */
 public class App extends Application {
 
+    public  static App mContext;
+
     @Override
     public void onCreate() {
         super.onCreate();
-        Log.i("cc", "应用启动了");
+        mContext = this;
         CustomActivityOnCrash.install(this);
     }
 }

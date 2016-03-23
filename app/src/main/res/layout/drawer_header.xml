@@ -47,6 +47,7 @@
         android:layout_toRightOf="@id/header_icon"
         android:ellipsize="end"
         android:maxLines="4"
+        android:text="@string/about_content"
         android:textColor="@color/material_cyan_200"
         android:textSize="15sp" />
 
