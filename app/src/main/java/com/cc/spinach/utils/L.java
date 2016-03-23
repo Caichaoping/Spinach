@@ -32,4 +32,11 @@ public class L  {
         }
         Log.d(tag, buildHeader() + String.valueOf(msg));
     }
+
+    public static void e(Object msg) {
+        if (!isDebug) {
+            return;
+        }
+        Log.e(tag, buildHeader() + String.valueOf(msg));
+    }
 }

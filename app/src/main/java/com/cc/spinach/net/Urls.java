@@ -8,6 +8,7 @@ package com.cc.spinach.net;
 public class Urls  {
 
     //http://c.m.163.com/nc/article/headline/T1348647909107/0-5.html  头条
+    //http://c.m.163.com/nc/article/list/T1348654060988/0-5.html 汽车
 
     public static final int PAZE_SIZE = 20;
 
@@ -37,4 +38,18 @@ public class Urls  {
 
     //百度定位
     public static final String INTERFACE_LOCATION = "http://api.map.baidu.com/geocoder";
+
+    // 获取新闻列表的绝对Url
+    public static String getNewsUrl(String id,int FromPage){
+        StringBuffer sb = new StringBuffer(COMMON_URL);
+        sb.append(id).append("/").append(FromPage).append("-20.html");
+        return sb.toString();
+    }
+
+    // 获取新闻详情绝对url
+    public static String getNewsDetailUrl(String docId){
+        StringBuffer sb = new StringBuffer(Urls.NEW_DETAIL);
+        sb.append(docId).append(Urls.END_DETAIL_URL);
+        return sb.toString();
+    }
 }

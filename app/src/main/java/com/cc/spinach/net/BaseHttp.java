@@ -188,7 +188,6 @@ public class BaseHttp<T>{
             @Override
             public void onResponse(Response response) throws IOException {
                 final String result = response.body().string();
-                Log.i(TAG, "结果：" + result);
                 if(isListenerNotNull(listener)) listener.onStringResult(result);
                 mHandler.post(new Runnable() {
                     @Override
