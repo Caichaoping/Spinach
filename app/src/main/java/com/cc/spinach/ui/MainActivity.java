@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(mToolbar);
         mDrawerToggle = new ActionBarDrawerToggle(this,mDrawerLayout,mToolbar,R.string.drawer_open ,R.string.drawer_close);
         mDrawerToggle.syncState();
-        mDrawerLayout.addDrawerListener(mDrawerToggle);
+        mDrawerLayout.setDrawerListener(mDrawerToggle);
         mNavigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(MenuItem menuItem) {
