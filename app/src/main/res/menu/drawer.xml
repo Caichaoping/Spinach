@@ -17,6 +17,10 @@
     <item android:title="@string/other">
         <menu>
             <item
+                android:id="@+id/drawer_set"
+                android:icon="@drawable/ic_info_grey"
+                android:title="@string/set" />
+            <item
                 android:id="@+id/drawer_about"
                 android:icon="@drawable/ic_info_grey"
                 android:title="@string/about" />

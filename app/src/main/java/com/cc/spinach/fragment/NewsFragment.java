@@ -3,7 +3,6 @@ package com.cc.spinach.fragment;
 
 
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -12,7 +11,6 @@ import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
 
 import com.cc.spinach.R;
 import com.cc.spinach.base.BaseFragment;
@@ -39,18 +37,11 @@ public class NewsFragment extends BaseFragment {
     public static final int NEWS_TYPE_CARS = 2;
     public static final int NEWS_TYPE_JOKES = 3;
 
-    @Nullable
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
+    @Override
+    protected View initView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_news, null);
         ButterKnife.bind(this, view);
-        initView(view);
-        return view;
-    }
-
-    private void initView(View view) {
-
         mViewpager.setOffscreenPageLimit(3);
         setupViewPager(mViewpager);
         mTabLayout.addTab(mTabLayout.newTab().setText(R.string.top));
@@ -58,7 +49,9 @@ public class NewsFragment extends BaseFragment {
         mTabLayout.addTab(mTabLayout.newTab().setText(R.string.cars));
         mTabLayout.addTab(mTabLayout.newTab().setText(R.string.jokes));
         mTabLayout.setupWithViewPager(mViewpager);
+        return view;
     }
+
 
     private void setupViewPager(ViewPager viewPager) {
         MyPagerAdapter adapter = new MyPagerAdapter(getChildFragmentManager());

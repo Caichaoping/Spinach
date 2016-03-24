@@ -13,6 +13,7 @@
     <string name="tab2">新闻</string>
     <string name="tab1">美图</string>
     <string name="about">关于</string>
+    <string name="set">设置</string>
 
     <string name="setting">设置</string>
     <string name="network_error">网络连接错误，请检查网络连接后重试</string>
@@ -67,5 +68,24 @@
     <string name="unknown_exception">Unknown exception</string>
     <string name="restart_app">重启应用</string>
     <string name="close_app">关闭退出</string>
+
+    <string name="settings_nomal">常规设置</string>
+    <string name="settings_more">其他</string>
+    <string name="settings_use_https">使用HTTPS</string>
+    <string name="settings_use_jsonapi">使用Json API</string>
+    <string name="settings_use_jsonapi_summary">使用Json API访问，访问次数有限制</string>
+    <string name="settings_use_browser_summary">模拟浏览器访问，访问次数无限制</string>
+    <string name="settings_clear_cache">清除缓存</string>
+    <string name="settings_noimage_nowifi">无图模式</string>
+    <string name="settings_message_push">消息推送</string>
+    <string name="settings_noimage_nowifi_summary">2G/3G网络下不显示图片</string>
+    <string name="settings_image_nowifi_summary">2G/3G网络下显示图片</string>
+    <string name="settings_use_effect">列表滚动显示动画效果</string>
+    <string name="settings_check_update">检查更新</string>
+    <string name="settings_feedback">给个好评</string>
+    <string name="settings_about">关于我们</string>
+    <string name="settings_dialog_hint">提示</string>
+    <string name="settings_logout_or_not">确定退出登录？</string>
+    <string name="settings_clear_cache_or_not">确定清除缓存？</string>
 
 </resources>

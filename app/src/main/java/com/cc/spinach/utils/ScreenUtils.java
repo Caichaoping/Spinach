@@ -10,7 +10,7 @@ import android.util.DisplayMetrics;
 import android.view.View;
 import android.view.WindowManager;
 
-import com.cc.spinach.App;
+import com.cc.spinach.AppContext;
 
 
 /**
@@ -19,7 +19,7 @@ import com.cc.spinach.App;
  * @date 2016-3-10
  */
 public class ScreenUtils {
-    public static final Context context = App.mContext;
+    public static final Context context = AppContext.mContext;
 
     private ScreenUtils()
     {

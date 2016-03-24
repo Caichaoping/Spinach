@@ -8,7 +8,7 @@ import android.net.NetworkInfo;
 import android.net.wifi.WifiInfo;
 import android.net.wifi.WifiManager;
 
-import com.cc.spinach.App;
+import com.cc.spinach.AppContext;
 
 
 public class NetworkUtils {
@@ -122,7 +122,7 @@ public class NetworkUtils {
 	 */
 	public static boolean isNetworkAvailable() {
 
-		ConnectivityManager cm = (ConnectivityManager) 	App.mContext
+		ConnectivityManager cm = (ConnectivityManager) 	AppContext.mContext
 				.getSystemService(Context.CONNECTIVITY_SERVICE);
 		NetworkInfo info = cm.getActiveNetworkInfo();
 		if ((info != null && info.isConnected())) {

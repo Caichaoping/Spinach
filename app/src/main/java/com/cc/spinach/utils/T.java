@@ -3,7 +3,7 @@ package com.cc.spinach.utils;
 import android.content.Context;
 import android.widget.Toast;
 
-import com.cc.spinach.App;
+import com.cc.spinach.AppContext;
 
 /**
  * 注释：吐司工具类
@@ -25,19 +25,19 @@ public class T {
     }
 
     public static void showShort(int resId) {
-        Toast.makeText(App.mContext, resId, Toast.LENGTH_SHORT).show();
+        Toast.makeText(AppContext.mContext, resId, Toast.LENGTH_SHORT).show();
     }
 
     public static void showShort(String message) {
-        Toast.makeText(App.mContext, message, Toast.LENGTH_SHORT).show();
+        Toast.makeText(AppContext.mContext, message, Toast.LENGTH_SHORT).show();
     }
 
     public static void showLong(int resId) {
-        Toast.makeText(App.mContext, resId, Toast.LENGTH_LONG).show();
+        Toast.makeText(AppContext.mContext, resId, Toast.LENGTH_LONG).show();
     }
 
     public static void showLong(String message) {
-        Toast.makeText(App.mContext, message, Toast.LENGTH_LONG).show();
+        Toast.makeText(AppContext.mContext, message, Toast.LENGTH_LONG).show();
     }
 
 }

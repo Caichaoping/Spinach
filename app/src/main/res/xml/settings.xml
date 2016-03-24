@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:key="settings_settings"
+        android:title="@string/settings_nomal">
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="pref_show_map"
+            android:title="加载图片"
+            android:summary="开启该模式，不显示新闻图片"/>
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="pref_receive_msg"
+            android:title="消息推送"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/settings_more">
+
+        <Preference
+            android:key="pref_cache"
+            android:title="@string/settings_clear_cache"
+            android:summary="0KB"/>
+
+        <Preference
+            android:key="pref_about"
+            android:title="关于作者" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
