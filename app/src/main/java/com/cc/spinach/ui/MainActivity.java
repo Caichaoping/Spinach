@@ -68,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
         LayoutInflater inflater = LayoutInflater.from(MainActivity.this);
         View view = inflater.inflate(R.layout.drawer_header,null);
         tv_bio = (TextView) view.findViewById(R.id.header_bio);
-        tv_bio.setText("数据的开关阀建设的赶快来进口量的双方各");
+        tv_bio.setText("数据的开关");
     }
 
 
@@ -80,9 +80,13 @@ public class MainActivity extends AppCompatActivity {
                 mToolbar.setTitle("主题");
                 break;
             case R.id.drawer_tab2:
-                Log.d("cc","节点");
+                Log.d("cc", "节点");
 
 
+                break;
+            case R.id.drawer_headchange:
+                Log.d("cc", "切换头像");
+                startActivity(new Intent(MainActivity.this, LoginActivity.class));
                 break;
             case R.id.drawer_set:
                 Log.d("cc", "设置");

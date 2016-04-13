@@ -8,7 +8,7 @@ import android.widget.ImageView;
 import android.widget.ProgressBar;
 
 import com.cc.spinach.R;
-import com.cc.spinach.base.BaseActivity;
+import com.cc.spinach.base.BaseSwiBackActivity;
 import com.cc.spinach.model.NewDetailModel;
 import com.cc.spinach.model.NewModel;
 import com.cc.spinach.net.CallbackListener;
@@ -28,7 +28,7 @@ import butterknife.ButterKnife;
  * 作者：菠菜 on 2016/3/21 17:48
  * 邮箱：971859818@qq.com
  */
-public class NewDetailsActivity extends BaseActivity {
+public class NewDetailsActivity extends BaseSwiBackActivity {
 
 
     @Bind(R.id.ivImage)
